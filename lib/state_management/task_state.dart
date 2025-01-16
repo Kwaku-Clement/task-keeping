@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import '../models/task_model.dart';
+import 'package:task_keeping/models/task_model.dart';
 
 abstract class TaskState extends Equatable {
   const TaskState();
@@ -11,10 +11,19 @@ abstract class TaskState extends Equatable {
 class TaskInitial extends TaskState {}
 
 class TaskLoadSuccess extends TaskState {
-  final List<Task> tasks;
+  final List<TaskModel> tasks;
 
   const TaskLoadSuccess(this.tasks);
 
   @override
   List<Object> get props => [tasks];
+}
+
+class TaskLoadFailure extends TaskState {
+  final String error;
+
+  const TaskLoadFailure(this.error);
+
+  @override
+  List<Object> get props => [error];
 }
