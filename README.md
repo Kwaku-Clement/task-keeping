@@ -38,33 +38,7 @@ Installation
 
 3. Run the application:
 
-   flutter run
-
-
-Project Structure
-
-
-task_keeper/
-├── lib/
-│   ├── controllers/
-│   │   └── task_controller.dart
-│   ├── database/
-│   │   └── database_helper.dart
-│   ├── models/
-│   │   └── task_model.dart
-│   ├── state_management/
-│   │   ├── task_bloc.dart
-│   │   ├── task_event.dart
-│   │   └── task_state.dart
-│   ├── widgets/
-│   │   ├── task_dialog.dart
-│   │   └── task_item.dart
-│   ├── main.dart
-│   └── task_list_screen.dart
-├── pubspec.yaml
-├── README.md
-└── screenshots/
-    
+   flutter run    
 
 Dependencies
 -flutter_bloc: For state management.
